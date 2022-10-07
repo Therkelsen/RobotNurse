@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/therkelsen/RobotNurse/RobotControl/cmake-build-debug/
+cmake_ninja_workdir = /home/simon/RobotNurse/RobotControl/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target RobotControl
 
@@ -49,15 +49,15 @@ cmake_ninja_workdir = /home/therkelsen/RobotNurse/RobotControl/cmake-build-debug
 
 build cmake_object_order_depends_target_RobotControl: phony || CMakeFiles/RobotControl.dir
 
-build CMakeFiles/RobotControl.dir/main.cpp.o: CXX_COMPILER__RobotControl_Debug /home/therkelsen/RobotNurse/RobotControl/main.cpp || cmake_object_order_depends_target_RobotControl
+build CMakeFiles/RobotControl.dir/main.cpp.o: CXX_COMPILER__RobotControl_Debug /home/simon/RobotNurse/RobotControl/main.cpp || cmake_object_order_depends_target_RobotControl
   DEP_FILE = CMakeFiles/RobotControl.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -std=gnu++1z
   OBJECT_DIR = CMakeFiles/RobotControl.dir
   OBJECT_FILE_DIR = CMakeFiles/RobotControl.dir
 
-build CMakeFiles/RobotControl.dir/MotionControl.cpp.o: CXX_COMPILER__RobotControl_Debug /home/therkelsen/RobotNurse/RobotControl/MotionControl.cpp || cmake_object_order_depends_target_RobotControl
+build CMakeFiles/RobotControl.dir/MotionControl.cpp.o: CXX_COMPILER__RobotControl_Debug /home/simon/RobotNurse/RobotControl/MotionControl.cpp || cmake_object_order_depends_target_RobotControl
   DEP_FILE = CMakeFiles/RobotControl.dir/MotionControl.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -std=gnu++1z
   OBJECT_DIR = CMakeFiles/RobotControl.dir
   OBJECT_FILE_DIR = CMakeFiles/RobotControl.dir
 
@@ -69,8 +69,9 @@ build CMakeFiles/RobotControl.dir/MotionControl.cpp.o: CXX_COMPILER__RobotContro
 #############################################
 # Link the executable RobotControl
 
-build RobotControl: CXX_EXECUTABLE_LINKER__RobotControl_Debug CMakeFiles/RobotControl.dir/main.cpp.o CMakeFiles/RobotControl.dir/MotionControl.cpp.o
+build RobotControl: CXX_EXECUTABLE_LINKER__RobotControl_Debug CMakeFiles/RobotControl.dir/main.cpp.o CMakeFiles/RobotControl.dir/MotionControl.cpp.o | /usr/local/lib/librtde.so.1.5.4 /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_thread.so
   FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/librtde.so.1.5.4  /usr/lib/x86_64-linux-gnu/libboost_system.so  /usr/lib/x86_64-linux-gnu/libboost_thread.so  -lpthread
   OBJECT_DIR = CMakeFiles/RobotControl.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -82,7 +83,7 @@ build RobotControl: CXX_EXECUTABLE_LINKER__RobotControl_Debug CMakeFiles/RobotCo
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/therkelsen/RobotNurse/RobotControl/cmake-build-debug && /snap/clion/206/bin/cmake/linux/bin/ccmake -S/home/therkelsen/RobotNurse/RobotControl -B/home/therkelsen/RobotNurse/RobotControl/cmake-build-debug
+  COMMAND = cd /home/simon/RobotNurse/RobotControl/cmake-build-debug && /snap/clion/206/bin/cmake/linux/bin/ccmake -S/home/simon/RobotNurse/RobotControl -B/home/simon/RobotNurse/RobotControl/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -94,7 +95,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/therkelsen/RobotNurse/RobotControl/cmake-build-debug && /snap/clion/206/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/therkelsen/RobotNurse/RobotControl -B/home/therkelsen/RobotNurse/RobotControl/cmake-build-debug
+  COMMAND = cd /home/simon/RobotNurse/RobotControl/cmake-build-debug && /snap/clion/206/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/simon/RobotNurse/RobotControl -B/home/simon/RobotNurse/RobotControl/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +111,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/therkelsen/RobotNurse/RobotControl/cmake-build-debug
+# Folder: /home/simon/RobotNurse/RobotControl/cmake-build-debug
 
 build all: phony RobotControl
 
@@ -121,14 +122,14 @@ build all: phony RobotControl
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeBuildConfig.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeConfig.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeConfigVersion.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeTargets-noconfig.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeTargets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeBuildConfig.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeConfig.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeConfigVersion.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeTargets-noconfig.cmake /usr/local/lib/cmake/ur_rtde/ur_rtdeTargets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -120,13 +120,33 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/ur_rtde/ur_rtdeConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/ur_rtde/ur_rtdeConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/ur_rtde/ur_rtdeTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/ur_rtde/ur_rtdeTargets-noconfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/ur_rtde/ur_rtdeBuildConfig.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/therkelsen/RobotNurse/RobotControl/cmake-build-debug",
-		"source" : "/home/therkelsen/RobotNurse/RobotControl"
+		"build" : "/home/simon/RobotNurse/RobotControl/cmake-build-debug",
+		"source" : "/home/simon/RobotNurse/RobotControl"
 	},
 	"version" : 
 	{

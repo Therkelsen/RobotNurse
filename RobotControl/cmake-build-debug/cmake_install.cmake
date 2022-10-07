@@ -1,4 +1,4 @@
-# Install script for directory: /home/therkelsen/RobotNurse/RobotControl
+# Install script for directory: /home/simon/RobotNurse/RobotControl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/therkelsen/RobotNurse/RobotControl/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/simon/RobotNurse/RobotControl/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

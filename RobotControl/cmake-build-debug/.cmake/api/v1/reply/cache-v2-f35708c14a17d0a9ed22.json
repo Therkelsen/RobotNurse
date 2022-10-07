@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/therkelsen/RobotNurse/RobotControl/cmake-build-debug"
+			"value" : "/home/simon/RobotNurse/RobotControl/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/gcc-ar-7"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/gcc-ranlib-7"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -287,7 +287,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/gcc-ar-7"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/gcc-ranlib-7"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -591,7 +591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/therkelsen/RobotNurse/RobotControl"
+			"value" : "/home/simon/RobotNurse/RobotControl"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/bin/uname"
+			"value" : "/bin/uname"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/therkelsen/RobotNurse/RobotControl/cmake-build-debug"
+			"value" : "/home/simon/RobotNurse/RobotControl/cmake-build-debug"
 		},
 		{
 			"name" : "RobotControl_IS_TOP_LEVEL",
@@ -1147,7 +1147,19 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/therkelsen/RobotNurse/RobotControl"
+			"value" : "/home/simon/RobotNurse/RobotControl"
+		},
+		{
+			"name" : "ur_rtde_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for ur_rtde."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/lib/cmake/ur_rtde"
 		}
 	],
 	"kind" : "cache",
