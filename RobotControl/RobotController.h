@@ -4,8 +4,8 @@
 *  Authored by Thomas Therkelsen @ SDU
 */
 
-#ifndef ROBOTCONTROL_MOTIONCONTROL_H
-#define ROBOTCONTROL_MOTIONCONTROL_H
+#ifndef ROBOTCONTROLLER_H
+#define ROBOTCONTROLLER_H
 
 #include <iostream>
 #include <cmath>
@@ -19,10 +19,10 @@
 #include <string>
 //#include <Eigen/Dense>
 
-class MotionControl {
+class RobotController {
 public:
-    MotionControl(const std::string ipAddress, const std::string gripIP);
-    MotionControl();
+    RobotController(const std::string ipAddress, const std::string gripIP);
+    RobotController();
     void connectToRobot(const std::string ip);
     std::array<double, 3> getTCP();
     void moveHome();
@@ -33,15 +33,13 @@ public:
     void release(double T);
 
     // Gripper logic
-    void printStatus(int status);
-//    void gripperConnect(std::string ip);
+    void printGripperStatus(int status);
 
-    // Program logic
+    // Demo logic
     void showcase();
 
 private:
     // 6 dimensional vector with starting position and orientation of TCP
-    //std::vector<double> homePos{0.150, -0.230, -0.269, 0.137, -3.2, -0.05};  homePos{0.07, -0.500, 0.06, 1.8, -2.5, 0.01}
     std::vector<double> homePos{0.01329, -0.43659, 0.109789, 0.0484993, 3.10821, -0.268578};
 
     double radConv = acos(-1)/180;
@@ -55,9 +53,9 @@ private:
     ur_rtde::RTDEControlInterface rc;
     //Receive interface
     ur_rtde::RTDEReceiveInterface rr;
-    // Gripper
+    // Gripper interface
     ur_rtde::RobotiqGripper gc;
 };
 
 
-#endif //ROBOTCONTROL_MOTIONCONTROL_H
+#endif //ROBOTCONTROLLER

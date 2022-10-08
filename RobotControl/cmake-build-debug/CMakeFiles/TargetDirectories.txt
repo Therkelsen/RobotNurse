@@ -1,3 +1,0 @@
-/home/simon/RobotNurse/RobotControl/cmake-build-debug/CMakeFiles/RobotControl.dir
-/home/simon/RobotNurse/RobotControl/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/simon/RobotNurse/RobotControl/cmake-build-debug/CMakeFiles/rebuild_cache.dir
